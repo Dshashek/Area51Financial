@@ -1,0 +1,93 @@
+﻿ https://www.kaggle.com/dataforyou/bankloan,,,
+,,,
+Title,Credit data,,
+Source,Credit One Bank,,
+Number of instances,"5,000",,
+Name of Dataset,Analysis_of_default,,
+Number of Attributes,"20 (7 numerical, 13 categorical)",,
+Attribute descriptions:,,,
+,,,
+Status_Checking_Acc,Checking account balance ,A11,< 0 
+,,A12,"0 to 10,000"
+,,A13 ,">= 10,000"
+,,A14,No checking account
+,,,
+Duration_in_Months,Loan duration,,Numeric value
+,,,
+Credit_History,Credit history,A30,No credits taken
+,,A31,All credits at this bank paid in full
+,,A32,All existing credits in good standing
+,,A33,Payment delinquencies in the past
+,,A34,Critical account at other bank
+,,,
+Purposre_Credit_Taken,Purpose of Loan,A40,New car
+,,A41,Used car
+,,A42,Furniture
+,,A43,Television
+,,A44,Appliances
+,,A45,Repairs
+,,A46,Education
+,,A47,Vacation
+,,A48,Retraining
+,,A49,Business
+,,A410,Other
+,,,
+Credit_Amount,Amount of credit requested,,Numeric value
+,,,
+Savings_Acc,Savings account balance,A61 ,"0 < 1,000"
+,,A62,"1000 < 5,000"
+,,A63," 5,000 < 10,000"
+,,A64,"> 10,000"
+,,A65,No savings account
+,,,
+Years_At_Present_Employment,Employment status,A71,Unemployed
+,,A72,Less than 1 year
+,,A73,1 to 4 years 
+,,A74,4 to 7 years
+,,A75,Greater than 7 years
+,,,
+Inst_Rt_Income,Payment / disposable income,,Classed value with no description
+,,,
+Marital_Status_Gender,Gender and Marital Status,A91,Male - Divorced or seperated 
+,,A92,"Female - Divorced, seperated, or married"
+,,A93,Male - Single
+,,A94,Male - Married or widowed
+,,A95,Female - Single
+,,,
+Other_Debtors_Guarantors,Contingent liabilites,A101,None
+,,A102,Co-borrower
+,,A103,Guarantor
+,,,
+Current_Address_Yrs,Number of years at current address,,Classed value with no description
+,,,
+Property,DROP THIS ATTRIBUTE,,
+,,,
+Age,Applicant's Age,,Numeric value
+,,,
+Other_Inst_Plans ,Other installment loans,A141,Bank loan
+,,A142,Store credit
+,,A143,None
+,,,
+Housing,Current ,A151,Rent
+,,A152,Own
+,,A153,Other
+,,,
+Num_CC,Open accounts at this bank,,Numeric value
+,,,
+Job,Job description,A171,Unemployed or unskilled - non-resident 
+,,A172,Unskilled - resident
+,,A173,Skilled employee
+,,A174,"Management, self-employed,  highly qualified employee, or officer"
+,,,
+Dependents,,,Classed value with no description
+,,,
+Telephone,Do you have a telephone,A191,No
+,,A192,Yes
+,,,
+Foreign_Worker,Are you a foreign worker,A201,No
+,,A202,Yes
+,,,
+Default_On_Payment,,0,No default
+,,1,Default
+,,,
+Count,DROP THIS ATTRIBUTE,,
