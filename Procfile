@@ -1,1 +1,1 @@
-web: gunicorn area51financial.app:app
+web: gunicorn Area51Financial.app:app
