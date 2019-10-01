@@ -1,0 +1,109 @@
+﻿ https://www.kaggle.com/dataforyou/bankloan,,,,
+,,,,
+Title,Credit data,,,
+Source,Credit One Bank,,,
+Number of instances,"5,000",,,
+Name of Dataset,Analysis_of_default,,,
+Number of Attributes,"20 (7 numerical, 13 categorical)",,,
+Attribute descriptions:,,,,
+,,Category,Encoded,Questions for input
+Num_CC,Open accounts at this bank,Numeric,Numeric,"Numeric values (1, 2, 3, 4+)"
+,,,,
+Dependents,Do you have dependents,,0,No
+,,,1,Yes
+,,,,
+Status_Checking_Acc,Checking account balance ,A11,0,< 0 
+,,A12,1,"0 to 10,000"
+,,A13 ,2,">= 10,000"
+,,A14,3,No checking account
+,,,,
+Duration_binned,Loan duration,B10,0,0 to 11 months
+,,B11,1,12 to 23 months
+,,B12,2,24 to 35 months
+,,B13,3,36 to 47 months
+,,B14,4,48 to 60 months
+,,B15,5,60 to 72 months
+,,,,
+Credit_History,Credit history,A30,0,No credits taken
+,,A31,1,All credits at this bank paid in full
+,,A32,2,All existing credits in good standing
+,,A33,3,Payment delinquencies in the past
+,,A34,4,Critical account at other bank
+,,,,
+Purposre_Credit_Taken,Purpose of Loan,A40,0,New car
+,,A41,1,Used car
+,,A42,3,Furniture
+,,A43,4,Television/Stereo
+,,A44,5,Appliances
+,,A45,6,Repairs
+,,A46,7,Education
+,,A47,,Vacation (there were none in this dataset so we need to drop)
+,,A48,8,Retraining
+,,A49,9,Business
+,,A410,2,Other
+,,,,
+Credit_amount_binned,Requested loan amount,B20,0,0 to 2499
+,,B21,1,2500 to 4999
+,,B22,2,4999 to 7499
+,,B23,3,7500 to 9999
+,,B24,4,10000 to 12499
+,,B25,5,12500 to 14999
+,,B26,6,15000 to 17499
+,,B27,7,17500 to 20000
+,,,,
+Savings_Acc,Savings account balance,A61 ,0,"0 < 1,000"
+,,A62,1,"1000 < 5,000"
+,,A63,2," 5,000 < 10,000"
+,,A64,3,"> 10,000"
+,,A65,4,No savings account
+,,,,
+Years_At_Present_Employment,Employment status,A71,0,Unemployed
+,,A72,1,Less than 1 year
+,,A73,2,1 to 4 years 
+,,A74,3,4 to 7 years
+,,A75,4,Greater than 7 years
+,,,,
+Marital_Status_Gender,Gender and Marital Status,A91,0,Male - Divorced or seperated 
+,,A92,1,"Female - Divorced, seperated, or married"
+,,A93,2,Male - Single
+,,A94,3,Male - Married or widowed
+,,A95,,Female - Single (none in dataset)
+,,,,
+Other_Debtors_Guarantors,Contingent liabilites,A101,0,None
+,,A102,1,Co-borrower
+,,A103,2,Guarantor
+,,,,
+Age_binned,Applicant's Age,B30,0,0 to 24
+,,B31,1,25 to 34
+,,B32,2,35 to 44
+,,B33,3,45 to 54
+,,B34,4,55 to 64
+,,B35,5,65 to 75
+,,,,
+Other_Inst_Plans ,Other installment loans,A141,0,Bank loan
+,,A142,1,Store credit
+,,A143,2,None
+,,,,
+Housing,Current ,A151,0,Rent
+,,A152,1,Own
+,,A153,2,Other
+,,,,
+Job,Job description,A171,0,Unemployed or unskilled - non-resident 
+,,A172,1,Unskilled - resident
+,,A173,2,Skilled employee
+,,A174,3,"Management, self-employed,  highly qualified employee"
+,,,,
+Telephone,Do you have a telephone,A191,0,No
+,,A192,1,Yes
+,,,,
+Foreign_Worker,Are you a foreign worker,A201,0,No
+,,A202,1,Yes
+,,,,
+Default_On_Payment,,0,"[1., 0.]",No default
+,,1,"[0., 1.]",Default
+,,,,
+,,,,
+Inst_Rt_Income,Payment / disposable income,,,DROP THIS ATTRIBUTE
+Count,,,,DROP THIS ATTRIBUTE
+Current_Address_Yrs,Number of years at current address,,,DROP THIS ATTRIBUTE
+Property,,,,DROP THIS ATTRIBUTE
