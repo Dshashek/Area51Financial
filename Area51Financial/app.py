@@ -20,7 +20,7 @@ def r1():
 def index():
     return render_template('Index.html')
 
-@app.route('/age',methods = ['POST'])
+@app.route('/age')
 def age():
     age=r1()
     return age
