@@ -32,6 +32,6 @@ if __name__ == '__main__':
 # In[5]:
 
 
-df=pd.read_excel('Par_Data for Logistic Regression.xlsx',skiprows=2)
+df=pd.read_excel('Par_DataforLogisticRegression.xlsx',skiprows=2)
 df['Age'].to_json()
 
