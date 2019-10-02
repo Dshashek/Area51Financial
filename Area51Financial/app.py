@@ -1,54 +1,38 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
-# In[11]:
+# In[1]:
 
 
-#dependencies
-from flask import Flask, render_template, redirect
+from flask import Flask,render_template,request
 
-#for postgres connections
-import os
-import psycopg2
+import pandas as pd
 
+template_dir = r'C:\Users\bvkka\Desktop\LoanApprover2'
 
-# In[12]:
+app = Flask(__name__,template_folder=template_dir)
 
-
-app = Flask(__name__, static_url_path='')
-
-
-# In[10]:
-
+def r1():
+    df=pd.read_excel('Par_Data for Logistic Regression.xlsx',skiprows=2)
+    return df['Age'].to_json()
+    
 
 @app.route("/")
 def index():
-    return render_template("template.html")
+    return render_template('Index.html')
 
-@app.route("/details")
-def details():
-    return render_template("details.html")
+@app.route('/age',methods = ['POST'])
+def age():
+    age=r1()
+    return age
 
-@app.route("/data")
-def data():
-    return render_template("data.html")
-
-@app.route("/results")
-def results():
-    #python code here
-    print('coming soon')
-    return redirect("/", code=302)
+if __name__ == '__main__':
+    app.run()
 
 
-# In[4]:
+# In[5]:
 
 
-if __name__ == "__main__":
-    app.run(debug=False)
-
-
-# In[ ]:
-
-
-
+df=pd.read_excel('Par_Data for Logistic Regression.xlsx',skiprows=2)
+df['Age'].to_json()
 

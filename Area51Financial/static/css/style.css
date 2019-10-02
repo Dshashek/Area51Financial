@@ -1,0 +1,227 @@
+/* ----- Page Styling ----- */
+
+.html,
+.body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.body {
+    overflow-y: auto;
+}
+
+.background {
+    background-color: #e4e5ed;
+}
+
+.margin-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.pageHeader {
+    height: 50px;
+    padding-top: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+}
+
+.pageHeader2 {
+    height: 55px;
+    display: block;
+    padding-right: 50px;
+}
+
+.headerFilters {
+    display: inline-block;
+    justify-content: right;
+}
+
+.footer {
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #1a1a1c;
+}
+
+.footer-text {
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.site-title {
+    color: #ffffff;
+    /* #123C69 */
+    text-align: left;
+    font-size: 27px;
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    display: inline-block;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.openFilter2 {
+    background-color: rgb(37, 37, 37) !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-right: 65px !important;
+    padding-left: 65px !important;
+    border-style: solid !important;
+    border-radius: 2px !important;
+    border-width: 1px !important;
+    border-color: #a680ff !important;
+    color: #a680ff !important;
+    font-size: 13px !important;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.openFilter2:hover {
+    background-color: #8754ff;
+    border-color: #8754ff;
+    color: #ffffff;
+}
+
+
+/* ------ Body Details ------ */
+
+.page-title {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    border-width: 1px;
+    border-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.body-container {
+    height: 120px;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.body-text {
+    color: #494b4d;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.detail-text {
+    color: #494b4d;
+    /*text-align: center;*/
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------ Card Styling ------ */
+
+.card {
+    /*box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);*/
+    transition: 0.5s;
+    border-radius: 2px;
+    background-color: #b6b6bf;
+    height: 143px;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card--expand {
+    /*height: 400px;
+	*/
+    z-index: 9999;
+    width: 35%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 38%;
+}
+
+
+/* ----- Page Container ----- */
+
+#outer-grid {
+    display: grid;
+    grid-template-rows: 65px 1fr;
+    grid-template-columns: 250px 1fr;
+    display: -ms-grid;
+    -ms-grid-rows: 65px 1fr;
+    -ms-grid-columns: 250px 1fr;
+}
+
+#nav-grid {
+    display: grid;
+    grid-template-columns: 25% 60% 13%;
+    grid-gap: 10px;
+    display: -ms-grid;
+    -ms-grid-columns: 25% 60% 13%;
+}
+
+#ex1Slider .slider-selection {
+    background: #BABABA;
+}
+
+
+/* ---- for d3 chart -----*/
+
+rect.bordered {
+    stroke: #bbb;
+    stroke-width: 3px;
+}
+
+text.mono {
+    font-size: 9pt;
+    font-family: verdana;
+    fill: #aaa;
+}
+
+text.mono:hover {
+    font-size: 12pt;
+    font-family: verdana;
+    fill: #aaa;
+    font-weight: bold;
+}
+
+.square {
+    opacity: 0.5;
+}
+
+.square:hover {
+    opacity: 1.0;
+}
+
+.d3-tip {
+    font-family: Verdana;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    color: #fff;
+    z-index: 5070;
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+}
