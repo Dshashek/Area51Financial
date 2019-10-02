@@ -12,7 +12,7 @@ import pandas as pd
 app = Flask(__name__, static_url_path = '')
 
 def r1():
-    df=pd.read_excel('./static/Par_Data for Logistic Regression.xlsx',skiprows=2)
+    df=pd.read_excel('./static/Par_DataforLogisticRegression.xlsx',skiprows=2)
     return df['Age'].to_json()
     
 
@@ -26,7 +26,7 @@ def age():
     return age
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
 
 
 # In[5]:
