@@ -1,1 +1,1 @@
-FLASK_APP=area51financial/app.py flask run
+FLASK_APP=Area51Financial/app.py flask run
